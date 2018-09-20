@@ -6,7 +6,7 @@ class Email
         @email_address = email_address
         @country = country
     end
-
+# not real email used
     def deliver
         Gmail.connect!(ENV['GMAIL_ADDRESS'], ENV['GMAIL_PASSWORD'])
         message = gmail.compose do |m|
